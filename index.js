@@ -27,7 +27,7 @@ inquirer.prompt([
     {
         type: 'input',
         message: 'What are the contribution guidelines?',
-        name: 'contributing',
+        name: 'credits',
     },
     {
         type: 'input',
@@ -55,11 +55,6 @@ inquirer.prompt([
         message: 'What is your email address?',
         name: 'email',
     },
-    {
-        type: 'input',
-        message: 'Please email me if you have additional questions.',
-        name: 'email-questions',
-    },
 ])
 .then((response) =>
 fs.writeFile('README.md', JSON.stringify(response), (err) => {
@@ -74,3 +69,18 @@ function init() {}
 
 // Function call to initialize app
 init();
+
+{`# ${title}
+## Description
+${description}
+## Installation
+${installation}
+## Usage
+${usage}
+## Credits
+${credits}
+## Tests
+${tests}
+## License
+${license}
+`}
