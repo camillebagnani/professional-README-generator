@@ -1,9 +1,10 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer')
-// TODO: Create an array of questions for user input
-const questions = [];
-inquirer.prompt([
+const generateMarkdown = require('./utils/generateMarkdown')
+
+// Array of questions for user input that we can use as a variable in our inquirer prompt
+const questions = [
     {
         type: 'input',
         message: 'What is the title of your project?',
@@ -26,7 +27,7 @@ inquirer.prompt([
     },
     {
         type: 'input',
-        message: 'What are the contribution guidelines?',
+        message: 'Please list the credits here:',
         name: 'credits',
     },
     {
@@ -37,17 +38,17 @@ inquirer.prompt([
     {
         type: 'list',
         message: 'What is the license?',
-        choices: ['test1', 'test2'],
+        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
         name: 'license',
     },
     {
         type: 'input',
-        message: 'What is your GitHub username?',
+        message: 'Enter your GitHub username:',
         name: 'username',
     },
     {
         type: 'input',
-        message: 'Please provide the link to your GitHub profile.',
+        message: 'Add a link to your GitHub profile.',
         name: 'profile',
     },
     {
@@ -55,32 +56,26 @@ inquirer.prompt([
         message: 'What is your email address?',
         name: 'email',
     },
-])
-.then((response) =>
-fs.writeFile('README.md', JSON.stringify(response), (err) => {
+];
 
-})
-)
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// Writes README file. Takes in the file name and the data from the inquirer prompt
+function writeToFile(fileName, data) { 
+    fs.writeFile(fileName, data, (err) => {
+        console.log('Generating README...')
+    })
+}
 
-// TODO: Create a function to initialize app
-function init() {}
+// This will initialize the app when you call node index
+function init() {
+    // Inquirer uses the questions array as the prompts in the terminal
+    inquirer.prompt(questions)
+    // The function waits for the response before it completes the writeToFile function
+    .then((response) => {
+        var markdown = generateMarkdown(response)
+        // We pass in the file name, and the response from inquirer
+        writeToFile('README.md', markdown)
+    })
+ }
 
 // Function call to initialize app
 init();
-
-{`# ${title}
-## Description
-${description}
-## Installation
-${installation}
-## Usage
-${usage}
-## Credits
-${credits}
-## Tests
-${tests}
-## License
-${license}
-`}
