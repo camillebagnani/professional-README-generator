@@ -1,23 +1,29 @@
-# f
-  
+# d
+  ![MIT license badge](https://img.shields.io/badge/License-GPL_3.0-green)
 
 ## Description
-f
+d
 
 ## Table of Contents
+*[Installation](#installation)
 
+*[Usage](#usage)
+
+*[Credits](#credits)
+
+*[Tests](#tests)
 
 ## Installation
-f
+d
 
 ## Usage
-f
+d
 
 ## Credits
-f
+d
 
 ## Tests
-f
+d
 
 ## License
-None
+GPL 3.0
