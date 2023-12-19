@@ -2,7 +2,7 @@
   ![BSD 3 license badge](https://img.shields.io/badge/License-BSD_3-green)
 
 ## Description
-This project was designed to be used as a template to make professional README files efficiently.
+This project was designed to be used as a template to make professional README files efficiently. It taught me how to run NodeJS, install Inquirer, use modularization in my code, syntax for Markdown and more. 
 
 Video here: https://drive.google.com/file/d/1prvSWJ7nTK1BYKwUzVB91-ZCYLvrwI32/view?usp=sharing
 
