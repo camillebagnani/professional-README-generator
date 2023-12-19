@@ -53,6 +53,8 @@ ${data.description}
 
 *[Tests](#tests)
 
+*[Questions](#questions)
+
 ${renderLicenseLink(data.license)}
 
 ## Installation
@@ -66,6 +68,11 @@ ${data.credits}
 
 ## Tests
 ${data.tests}
+
+## Questions
+GitHub: ${data.username} | ${data.profile}
+
+${data.questions} ${data.email}
 
 ${renderLicenseSection(data.license)}
 `

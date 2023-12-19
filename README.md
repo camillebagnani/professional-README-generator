@@ -1,8 +1,8 @@
-# d
-  
+# c
+  ![MIT license badge](https://img.shields.io/badge/License-MIT-green)
 
 ## Description
-d
+c
 
 ## Table of Contents
 *[Installation](#installation)
@@ -13,18 +13,27 @@ d
 
 *[Tests](#tests)
 
+*[Questions](#questions)
 
+*[License](#license)
 
 ## Installation
-d
+c
 
 ## Usage
-d
+c
 
 ## Credits
-d
+c
 
 ## Tests
-d
 
 
+## Questions
+GitHub: c | c
+
+c c
+
+
+## License
+MIT
