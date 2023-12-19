@@ -1,8 +1,10 @@
-# c
-  ![MIT license badge](https://img.shields.io/badge/License-MIT-green)
+# Professional README Generator
+  ![BSD 3 license badge](https://img.shields.io/badge/License-BSD_3-green)
 
 ## Description
-c
+This project was designed to be used as a template to make professional README files efficiently.
+
+Video here: https://drive.google.com/file/d/1prvSWJ7nTK1BYKwUzVB91-ZCYLvrwI32/view?usp=sharing
 
 ## Table of Contents
 *[Installation](#installation)
@@ -18,22 +20,22 @@ c
 *[License](#license)
 
 ## Installation
-c
+n/a
 
 ## Usage
-c
+n/a
 
 ## Credits
-c
+Starter code: https://github.com/coding-boot-camp/potential-enigma
 
 ## Tests
-
+n/a
 
 ## Questions
-GitHub: c | c
+GitHub: camillebagnani | https://github.com/camillebagnani
 
-c c
+Please send questions to camillebagnani at gmail dot com
 
 
 ## License
-MIT
+BSD 3
