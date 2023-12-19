@@ -14,9 +14,7 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-// only generate this if there is a license
+// Only generate a Table of Contents link to License if there is a license, else return an empty string
 function renderLicenseLink(license) {
   if (license !== 'None') {
     return `*[License](#license)`;
@@ -25,17 +23,20 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
+// Returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'None') {
-    return `## License`;
+    // Return statement formatted like this because of template literal behavior in Markdown
+    return `
+## License
+${license}`;
   } else {
     return '';
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// Generates markdown template of README using template literals
 function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
@@ -71,7 +72,3 @@ ${renderLicenseSection(data.license)}
 }
 
 module.exports = generateMarkdown;
-
-
-// ## License
-// ${data.license}

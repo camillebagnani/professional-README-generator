@@ -58,7 +58,8 @@ const questions = [
     },
 ];
 
-// Writes README file. Takes in the file name and the data from the inquirer prompt
+// Writes README file
+// Takes in the file name and the data from the inquirer prompt
 function writeToFile(fileName, data) { 
     fs.writeFile(fileName, data, (err) => {
         console.log('Generating README...')
